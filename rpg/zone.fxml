@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rpg.ZoneController">
+   <children>
+      <Label fx:id="zoneName" layoutX="269.0" layoutY="59.0" text="Zone 1" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="subzoneBtn1" layoutX="123.0" layoutY="134.0" mnemonicParsing="false" onAction="#switchToSubzone1" text="Subzone1" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="subzoneBtn2" layoutX="406.0" layoutY="134.0" mnemonicParsing="false" onAction="#switchToSubzone2" text="Subzone2" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="subzoneBtn3" layoutX="123.0" layoutY="235.0" mnemonicParsing="false" onAction="#switchToSubzone3" text="Subzone3" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="subzoneBtn4" layoutX="406.0" layoutY="235.0" mnemonicParsing="false" onAction="#switchToSubzone4" text="Subzone4" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="274.0" layoutY="311.0" mnemonicParsing="false" onAction="#back" text="Back" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rpg.ItemShopScreenController">
+   <children>
+      <ListView fx:id="itemList" onMouseClicked="#getItemIndex" prefHeight="275.0" prefWidth="430.0" />
+      <Button fx:id="buy" layoutX="483.0" layoutY="126.0" mnemonicParsing="false" onAction="#buy" text="Buy Item" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="280.0" layoutY="318.0" mnemonicParsing="false" onAction="#back" text="Back" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="cost" layoutX="444.0" layoutY="192.0" prefHeight="32.0" prefWidth="138.0" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

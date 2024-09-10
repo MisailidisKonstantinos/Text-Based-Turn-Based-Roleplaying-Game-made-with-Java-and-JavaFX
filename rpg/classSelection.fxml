@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rpg.ClassSelectionController">
+   <children>
+      <Label alignment="CENTER" layoutX="226.0" layoutY="35.0" prefHeight="56.0" prefWidth="148.0" text="Select your class" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="fighter" layoutX="53.0" layoutY="140.0" mnemonicParsing="false" onAction="#createFighter" prefHeight="25.0" prefWidth="96.0" text="Fighter" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="brawler" layoutX="53.0" layoutY="188.0" mnemonicParsing="false" onAction="#createBrawler" prefHeight="25.0" prefWidth="96.0" text="Brawler" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="scorcher" layoutX="170.0" layoutY="140.0" mnemonicParsing="false" onAction="#createScorcher" prefHeight="25.0" prefWidth="96.0" text="Scorcher" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="necromancer" layoutX="170.0" layoutY="188.0" mnemonicParsing="false" onAction="#createNecromancer" prefHeight="25.0" prefWidth="96.0" text="Necromancer" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="assassin" layoutX="287.0" layoutY="140.0" mnemonicParsing="false" onAction="#createAssassin" prefHeight="25.0" prefWidth="96.0" text="Assassin" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="hunter" layoutX="287.0" layoutY="188.0" mnemonicParsing="false" onAction="#createHunter" prefHeight="25.0" prefWidth="96.0" text="Hunter" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="select" layoutX="202.0" layoutY="318.0" mnemonicParsing="false" onAction="#selectClass" prefHeight="26.0" prefWidth="63.0" text="Select" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <TextArea fx:id="classTextArea" editable="false" layoutX="419.0" layoutY="187.0" prefHeight="214.0" prefWidth="181.0" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></TextArea>
+      <Button fx:id="berserker" layoutX="53.0" layoutY="236.0" mnemonicParsing="false" onAction="#createBerserker" prefHeight="25.0" prefWidth="96.0" text="Berserker" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="alchemist" layoutX="170.0" layoutY="236.0" mnemonicParsing="false" onAction="#createAlchemist" prefHeight="25.0" prefWidth="96.0" text="Alchemist" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="sentinel" layoutX="287.0" layoutY="236.0" mnemonicParsing="false" onAction="#createSentinel" prefHeight="25.0" prefWidth="96.0" text="Sentinel" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rpg.CombatScreenController">
+   <children>
+      <Button fx:id="returnBtn" layoutX="287.0" layoutY="316.0" mnemonicParsing="false" onAction="#returnToSubzone" text="Return" textFill="RED" visible="false">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Label fx:id="results" alignment="CENTER" layoutX="285.0" layoutY="181.0" prefHeight="17.0" prefWidth="52.0" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label fx:id="playerName" alignment="CENTER" layoutX="82.0" layoutY="70.0" prefHeight="17.0" prefWidth="86.0" text="Label" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label fx:id="playerHP" alignment="CENTER" layoutX="82.0" layoutY="232.0" prefHeight="17.0" prefWidth="86.0" text="Label" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label fx:id="enemyName" alignment="CENTER" layoutX="465.0" layoutY="70.0" prefHeight="17.0" prefWidth="86.0" text="Label" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label fx:id="enemyHP" alignment="CENTER" layoutX="465.0" layoutY="232.0" prefHeight="17.0" prefWidth="86.0" text="Label" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <TextArea fx:id="damageInfo" editable="false" layoutX="226.0" layoutY="43.0" prefHeight="107.0" prefWidth="170.0" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></TextArea>
+      <ImageView fx:id="playerImg" fitHeight="135.0" fitWidth="137.0" layoutX="57.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="enemyImg" fitHeight="135.0" fitWidth="137.0" layoutX="440.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <SplitPane layoutX="134.0" layoutY="272.0" prefHeight="26.0" prefWidth="86.0">
+         <items>
+            <Button fx:id="ability2" mnemonicParsing="false" onAction="#secondAbility" prefHeight="25.0" prefWidth="86.0" text="Button" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Button>
+         </items>
+         <tooltip>
+            <Tooltip fx:id="btn2ToolTip" text="asd" />
+         </tooltip>
+      </SplitPane>
+      <SplitPane layoutX="27.0" layoutY="272.0" prefHeight="26.0" prefWidth="86.0">
+         <items>
+            <Button fx:id="ability1" mnemonicParsing="false" onAction="#firstAbility" prefHeight="25.0" prefWidth="86.0" text="Button" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Button>
+         </items>
+         <tooltip>
+            <Tooltip fx:id="btn1ToolTip" text="Deal Damage" />
+         </tooltip>
+      </SplitPane>
+      <SplitPane layoutX="27.0" layoutY="315.0" prefHeight="26.0" prefWidth="86.0">
+         <items>
+            <Button fx:id="ability3" mnemonicParsing="false" onAction="#thirdAbility" prefHeight="25.0" prefWidth="86.0" text="Button" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Button>
+         </items>
+         <tooltip>
+            <Tooltip fx:id="btn3ToolTip" text="Empty Tooltip" />
+         </tooltip>
+      </SplitPane>
+      <SplitPane layoutX="134.0" layoutY="314.0" prefHeight="26.0" prefWidth="86.0">
+         <items>
+            <Button fx:id="ability4" mnemonicParsing="false" onAction="#fourthAbility" prefHeight="25.0" prefWidth="86.0" text="Button" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Button>
+         </items>
+         <tooltip>
+            <Tooltip fx:id="btn4ToolTip" text="Empty Tooltip" />
+         </tooltip>
+      </SplitPane>
+   </children>
+</AnchorPane>
